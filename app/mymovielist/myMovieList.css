@@ -1,0 +1,156 @@
+.cccontainer {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100dvw;
+  height: 100dvh;
+  overflow: hidden;
+  user-select: none;
+}
+
+.sssearchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 30;
+  width: 100dvw;
+  height: 100dvh;
+}
+.nnnavBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100% ;
+  height: 2.3rem;
+ 
+}
+
+.lllinks {
+  font-weight: 600;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: clamp(0.2rem, 3vw, 1.5rem);
+  z-index: 3;
+  padding: 0.4rem;
+}
+.links:hover {
+  color: green;
+}
+
+.links.welcome{
+  color: rgb(25, 139, 162);
+}
+
+
+.mmmovieContainer {
+    overflow: hidden;
+    position: relative;
+    width: fit-content;
+} 
+
+
+
+.icon {
+  position: absolute;
+  height: 1.6rem;
+  left: 0.3rem;
+  bottom: 0.23rem;
+  cursor: pointer;
+}
+
+.searchInput {
+  text-align: center;
+  padding: 0.4rem 0.4rem 0.4rem 2.5rem;
+  width: clamp(10rem, 60vw, 40rem);
+  height: 2rem;
+  font-size: clamp(1rem, 5vw, 2rem);
+}
+
+
+.rrrandomMovingMovies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.7rem;
+  position: relative;
+  background-color: rgb(12, 16, 16, 0.7);
+  width: 100%;
+  height: clamp(3rem, 30vh, 47rem);
+  
+}
+.llleft-flech,
+.rrright-flech {
+  position: absolute;
+  height: clamp(2rem, 10vw, 5rem);
+  color: white;
+  bottom: 40%;
+  cursor: pointer;
+  z-index: 500 ;
+
+}
+.llleft-flech {
+  left: clamp(21rem,30vw,15rem);
+}
+.rrright-flech {
+  right: clamp(21rem,30vw,15rem);
+}
+@media(min-width:1500px){
+  .llleft-flech {
+    left: 16rem
+  }
+  .rrright-flech {
+    right: 16rem
+  }
+}
+@media(min-width:1660px){
+  .llleft-flech {
+    left: 13rem
+  }
+  .rrright-flech {
+    right:13rem
+  }
+}
+
+.hhheading {
+  font-size: clamp(.5rem, 4vw, 1rem);
+  color: rgb(255, 255, 255);
+  margin: 10px;
+}
+
+.iconAndInput{
+  position: relative;
+}
+
+.searching{
+  color: white;
+  font-size: clamp(1rem,10vw,3rem);
+  display: flex;
+ gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 90vw;
+}
+.searchMovie{
+  position: relative;
+}
+.noResults{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+}
+
+.mmmovieContainerContainer{
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}

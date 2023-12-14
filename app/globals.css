@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100dvw;
+  height: 100dvh;
+  flex-direction: column;
+}
+
+.container2 {
+  top: 50%;
+  border-radius: 0.7rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: fit-content;
+  height: 40dvh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 60;
+  transition: all;
+  animation: welcome 2s infinite alternate;
+}
+@keyframes welcome {
+  0% {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  100% {
+    background-color: rgb(39, 37, 37, 0.7);
+  }
+}
+.welcomInput {
+  text-decoration: none;
+  z-index: 1;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  text-align: center;
+  width: 40dvw;
+  height: 3rem;
+  padding: 0.4rem;
+  font-size: clamp(1rem, 5vw, 2rem);
+  font-family: "rounded";
+  /*box-shadow: 0px 0px 10px 1px green; when click*/
+}
+
+.goButton {
+  font-weight: 600;
+  background-color: red;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: clamp(1rem, 5vw, 2rem);
+  z-index: 3;
+  padding: 0.4rem;
+}
+.goButton:hover {
+  background-color: rgb(217, 4, 4);
+}
+
+@media (max-width: 622px) {
+  .welcomInput {
+    width: 60vw;
+  }
+}
+@media (max-width: 446px) {
+  .welcomInput {
+    width: 80vw;
+  }
+}
+/* Movie CSS :*/
+.movieCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.movie {
+  margin: 0.3rem;
+  width: clamp(5rem, 15vw, 10rem);
+  height: clamp(8rem, 20vw, 15rem);
+}
+.movieContainer {
+  position: relative;
+  width: fit-content !important;
+  overflow: hidden;
+}
+.star,
+.correct {
+  color: rgba(112, 119, 114, 0.9);
+  position: absolute;
+  cursor: pointer;
+ 
+}
+.star {
+  height: clamp(20px,4vw,35px);
+  bottom: 13px;
+  right: 5px;
+}
+.correct {
+  height: clamp(20px,4vw,30px);
+  bottom: 10px;
+  left: 10px;
+}
+.star.yellowStar{
+  color: yellow;
+}
+.correct.yellowCorrect{
+  color: rgb(0, 255, 38);
+}
+@media(max-height:500px){
+  .star {
+    height: clamp(20px,4vw,25px);
+  }
+  .correct {
+    height: clamp(20px,4vw,20px);
+  }
+  .movie {
+    margin: 0.3rem;
+    width: clamp(5rem, 15vw, 7rem);
+    height: clamp(8rem, 20vw, 9rem);
+  }
+}
+
+.searchMovie{
+  padding: .5rem;
+  position: relative;
+}
+
+.delet{
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: center;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color:  rgb(158, 16, 16);
+  cursor: pointer;
+}
+
+.loding{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 3rem;
+  background-color: black;
+  color: white;
+}
+.home{
+  position: absolute;
+  z-index: 1000;
+  color: rgb(255, 255, 255);
+  height: clamp(2rem,10vw,2.5rem);
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+.home:hover{
+  color: green;
+}
+
+.ccontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100dvw;
+    height: 100dvh;
+    flex-direction: column;
+    z-index: 1000px;
+  }
+  .ccontainer2 {
+    border-radius: 0.7rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+    height: 40dvh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 60;
+    transition: all;
+    animation: welcome 2s infinite alternate;
+  }
+  .wwelcomLabel {
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+  .ggoButton {
+  font-weight: 600;
+  background-color: red;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: clamp(1rem, 5vw, 2rem);
+  z-index: 3;
+  padding: 0.4rem;
+}
+.ggoButton:hover {
+  background-color: rgb(217, 4, 4);
+}
+.backMovieList{
+  position: absolute;
+  color: white;
+  top: 10px;
+  left: 100px;
+  height: clamp(1rem,10vw,2.5rem);
+  cursor: pointer;
+}
+.backMovieList:hover{
+  color: green;
+}
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 30;
+  width: 100dvw;
+  height: 100dvh;
+}
+.container {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100dvw;
+  height: 100dvh;
+  overflow: hidden;
+  user-select: none;
+}
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100% ;
+  height: 2.3rem;
+ 
+}
+.links {
+  font-weight: 600;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: clamp(0.2rem, 3vw, 1.5rem);
+  z-index: 3;
+  padding: 0.4rem;
+}
+.links:hover {
+  color: green;
+}
+
+.lllinks{
+color: white;
+}
+.lllinks:hover{
+  color:  green;
+}

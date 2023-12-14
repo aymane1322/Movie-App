@@ -1,0 +1,64 @@
+.container{
+    display: flex;
+    align-content: center;
+    justify-content: start;
+    background-color: black;
+}
+h1{
+    color: white;
+    margin: 1rem;
+}
+.toWatchMoviesDiv{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: .4rem;
+    width: 80dvw;
+    height: fit-content;
+    background-color: rgb(14, 14, 14);
+    overflow: auto;
+}
+
+
+
+.star,
+.correct {
+  color: rgba(112, 119, 114, 0.9);
+  position: absolute;
+  cursor: pointer;
+ 
+}
+.star {
+  height: clamp(20px,4vw,35px);
+  bottom: 10px;
+  right: 5px;
+}
+.correct {
+  height: clamp(20px,4vw,30px);
+  bottom: 5px;
+  left: 10px;
+}
+.star.yellowStar{
+  color: yellow;
+}
+.correct.yellowCorrect{
+  color: rgb(0, 255, 38);
+}
+.movie {
+    margin: 0.3rem;
+    width: clamp(5rem, 15vw, 13rem);
+    height: clamp(8rem, 20vw, 17rem);
+  }
+
+  @media(max-height:500px){
+    .star {
+      height: clamp(20px,4vw,25px);
+    }
+    .correct {
+      height: clamp(20px,4vw,20px);
+    }
+    .movie {
+      margin: 0.3rem;
+      width: clamp(5rem, 15vw, 7rem);
+      height: clamp(8rem, 20vw, 9rem);
+    }
+  }

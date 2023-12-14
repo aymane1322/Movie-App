@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    align-content: center;
+    justify-content: start;
+    background-color: black;
+}
+h1{
+    color: white;
+    margin: 1rem;
+}
+.toWatchMoviesDiv{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: .4rem;
+    width: 80dvw;
+    height: fit-content;
+    background-color: rgb(14, 14, 14);
+    overflow: auto;
+}
